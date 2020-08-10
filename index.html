@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>To do List</h1>
+    <input type="text" name="" id="addTask">
+    <button onclick= "newTask()" class="addBtn"> New Task</button>
+    <div class = "row" >
+    <!-- 1. Create 2 Lists, To Do and Done -->
+    
+    <ul class = "toDo" id = "tasks" id ="buttons">
+        <h2>To Do</h2>
+        <!-- 3. Make an input field and submit button to create a new To Do item that when you click submit, it adds it to the the To Do list -->
+        <!-- <input type="text" name="" id="addTask">
+        <button onclick= "newTask()" class="addBtn">Add</button> -->
+         
+        <!-- 2. Add 3 items to each list of your choosing -->
+        <li class="needDone"> Wake up <input type="checkbox"></li>
+        <li class="needDone"> Make breakfast and coffee <input type="checkbox"></li>
+        <li class="needDone"> Eat breakfast and drink coffee <input type="checkbox"></li>
+        
+    </ul>
+    <button class="addBtn" onclick= "taskDone()" id="moveTask"> Move to Done</button>
+    <ul class = "done" id = "completed" >
+        <h2>Done</h2>
+        <!-- 2. Add 3 items to each list of your choosing -->
+        <li> Wake up <input type="checkbox" onclick= "removeTask()"></li>
+        <li> Make breakfast and coffee <input type="checkbox" onclick= "removeTask()"></li>
+        <li> Eat breakfast and drink coffee <input type="checkbox" onclick= "removeTask()"></li>
+        <!-- <button class="addBtn" onclick= "taskDone()" id="moveTask"> Move to Done</button> -->
+    </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- To Do List:
+1. Create 2 Lists, To Do and Done
+2. Add 3 items to each list of your choosing
+3. Make an input field and submit button to create a new To Do item that when you click submit, it adds it to the the To Do list
+4. Make each To Do item checkable
+5. In between both lists there should be a button that when you click it, it should add all the checked items in To Do over to the Done list.
+Bonus: Make each Done item have an 'X' next it to so you can delete it forever -->

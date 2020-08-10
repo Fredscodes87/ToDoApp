@@ -1,0 +1,16 @@
+body{
+    background-color: #4dff4d;
+    color: black;
+    text-align: center;
+}
+
+li{
+    text-align: left;
+}
+ul li:hover {
+    background: #b3ffb3;
+}
+.row{
+    display: flex;
+    text-align: center;
+}
